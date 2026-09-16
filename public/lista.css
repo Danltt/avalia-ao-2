@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1026, #3b1766);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Título */
+#titulo {
+    background: #6c2bd9;
+    width: 500px;
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#titulo header {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Campo e botão */
+#formulario {
+    width: 500px;
+    background: #241337;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#tarefas {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #6c2bd9;
+    border-radius: 10px;
+    background: #17101f;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+#tarefas::placeholder {
+    color: #a99ab8;
+}
+
+#tarefas:focus {
+    border-color: #9b5cff;
+}
+
+/* Botão + */
+#botao {
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #7b35e8;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botao:hover {
+    background: #9b5cff;
+    transform: scale(1.05);
+}
+
+/* Lista */
+#listaPronta {
+    width: 500px;
+    background: #241337;
+    padding: 10px 20px 25px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#lista {
+    list-style: none;
+}
+
+#lista li {
+    background: #36204d;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-left: 4px solid #9b5cff;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#lista li:hover {
+    background: #45265f;
+    transform: translateX(5px);
+}
